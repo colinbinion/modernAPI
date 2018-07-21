@@ -6,9 +6,9 @@ const server = hapi.server({
 });
 
 const init = async () => {
-    await server.start();
-    console.log('====================================');
-    console.log(`Server running at: ${server.info.uri`);
+  await server.start();
+  console.log('====================================');
+  console.log('Server running at: ${server.info.uri');
   console.log('====================================');
 };
 
