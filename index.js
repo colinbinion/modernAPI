@@ -6,10 +6,18 @@ const server = hapi.server({
 });
 
 const init = async () => {
-  await server.start();
-  console.log('====================================');
-  console.log('Server running at: ${server.info.uri');
-  console.log('====================================');
+  server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+      return '<h1>My Hapi API';
+    }
+  });
+
+
+
 };
+
+
 
 init();
