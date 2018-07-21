@@ -19,7 +19,7 @@ const server = hapi.server({
   host: 'localhost'
 });
 
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds145951.mlab.com:45951/modernapi');
+mongoose.connect('mongodb://bobLoblaw:test1234@ds145951.mlab.com:45951/modernapi');
 
 mongoose.connection.once('open', () => {
   console.log('connected to database');
