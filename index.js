@@ -6,6 +6,16 @@ const server = hapi.server({
   host: 'localhost'
 });
 
+mongoose.connect('mongo://bobLoblaw:test1234@ds145951.mlab.com:45951/modernapi');
+
+mongoose.connect('mongo://indrek::test@ds129670.mlab.com:31090/powerful-api');
+
+mongoose.connection.once('open', () => {
+  console.log('====================================');
+  console.log(`connected to DB`);
+  console.log('====================================');
+})
+
 const init = async () => {
   server.route({
     method: 'GET',
