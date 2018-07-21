@@ -4,5 +4,8 @@ Stack:
 NodeJS
 GraphQL
 MongoDB
-Hapi
+Hapi ---> in place of Express
 Swagger
+Yarn
+
+Nodemon
